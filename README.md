@@ -33,3 +33,31 @@ git add .
 git commit -m "added landing page"
 git push origin master
 ```
+
+### Third: Add Drinks
+
+```bash
+rails g scaffold Drink name:string size:integer price:decimal
+rails db:migrate
+rails s
+```
+
+(in class our database messed up because we had a property called type which is reserved. we had to commit the changes to a new git branch and then go back to the master to fix it. messed with migrations to fix the database)
+In browser, go to http://0.0.0.0:3000/drinks to add several drinks to the database.
+
+Save to git and github in terminal
+
+
+```bash
+git add .
+git commit -m "added drinks scaffold"
+git push origin master
+```
+
+
+
+
+
+
+
+
